@@ -25,7 +25,8 @@ The attached R script (run_analysis.R) first downloads the "getdata-projectfiles
 
 Then it performs the following to clean up the data:
 
-1. Merges the training and the test sets to create one data set. The following files are merged:
+**Merges the training and the test sets to create one data set.**  
+The following files are merged:
 
 * UCI HAR Dataset/train/y_train.txt  
 * UCI HAR Dataset/test/y_test.txt  
@@ -34,11 +35,11 @@ Then it performs the following to clean up the data:
 * UCI HAR Dataset/train/X_train.txt  
 * UCI HAR Dataset/test/X_test.txt  
 
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+**Extracts only the measurements on the mean and standard deviation for each measurement.** 
 
 In the merged data set, the variables containing meand and standard deviation are subsetted, so that the number of variables reduce from 561 to 66
 
-3. Uses descriptive activity names to name the activities in the data set
+**Uses descriptive activity names to name the activities in the data set**
 
 Reads activity_labels.txt and applies descriptive activity names to name the activities in the data set:
 
@@ -49,9 +50,9 @@ Reads activity_labels.txt and applies descriptive activity names to name the act
 * standing  
 * laying  
 
-4. Appropriately labels the data set with descriptive variable names. 
+**Appropriately labels the data set with descriptive variable names. **
 
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+**From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.**
 
 
 
